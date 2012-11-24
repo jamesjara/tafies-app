@@ -157,6 +157,11 @@ app.get('/', function(req, res) {
     res.sendfile('./public/index.html');
 });
 
+/*jamesjara*/
+app.get('data.php?node=ap1', function(req, res) {
+    res.json('test');
+});
+
 /**
  * Return a list of runs for the user and all the user's friends
  */
