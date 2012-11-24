@@ -45,6 +45,30 @@ Ext.define('JWF.view.Main', {
                         iconCls: 'signoutBtn'
                     }
                 ]
+            },
+            {
+                xtype: 'toolbar',
+                docked: 'bottom',
+                id: 'mainToolbar2',
+                layout: {
+                    align: 'center',
+                    pack: 'center',
+                    type: 'hbox'
+                },
+                items: [
+                    {
+                        xtype: 'button',
+                        cls: 'fbButton',
+                        id: 'showFormButton',
+                        iconCls: 'showFormBtn'
+                    },
+                    {
+                        xtype: 'button',
+                        cls: 'fbButton',
+                        id: 'signout',
+                        iconCls: 'signoutBtn'
+                    }
+                ]
             }
         ]
     },

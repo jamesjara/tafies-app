@@ -40,9 +40,9 @@ Ext.define('JWF.view.Login', {
         });
 
         this.setHtml([
-        '<h2>Bienvenido a Tafies</h2>',
-        '<p>Con esta aplicación encontraras el mejor entretenimiento del momento(un rango de 4 horas aproximadamente).</p>',
-        '<p>En orden para utilizar Tafies debes iniciar sesión con tu cuenta de Facebook.</p>',
+        '<h2>Welcome to Jog with Friends</h2>',
+        '<p>With this app you can log your runs and share your progress with your friends</p>',
+        '<p>In order to use Jog with Friends you must sign in with your Facebook account.</p>',
         '<a class="fbLogin" href="https://m.facebook.com/dialog/oauth?' + redirectUrl + '"></a>',
         '<div class="fb-facepile" data-app-id="' + JWF.app.facebookAppId + '" data-max-rows="2" data-width="300"></div>'
         ].join(''));
