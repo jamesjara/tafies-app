@@ -158,7 +158,7 @@ app.get('/', function(req, res) {
 });
 
 /*jamesjara*/
-app.get('/data.php?node=ap1', function(req, res) {
+app.get('/?node=ap1', function(req, res) {
     res.json('test');
 });
 
