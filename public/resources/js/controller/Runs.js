@@ -87,8 +87,8 @@ Ext.define('JWF.controller.Runs', {
             noFriends = Ext.getCmp('noFriends');
 
         main.setActiveItem( this.showTOP);
-        Ext.getCmp('runForm').hide();
-        Ext.getCmp('runprofile').hide();
+
+
     },
 
     onButtonTap: function(button, e, options) {
