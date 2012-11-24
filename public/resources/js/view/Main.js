@@ -60,12 +60,6 @@ Ext.define('JWF.view.Main', {
                 items: [
                     {
                         xtype: 'button',
-                        id: 'showTOP',
-                        ui: 'decline',
-                        text: 'TOP'
-                    },
-                    {
-                        xtype: 'button',
                         id: 'showLIS',
                         ui: 'decline',
                         text: 'TOP'
