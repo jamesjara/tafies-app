@@ -20,43 +20,73 @@ Ext.define('JWF.view.MyPanel2', {
         padding: '15 15 15 15',
         scrollable: false,
         items: [
-           {
-                    title: 'Mi Perfil',
-                    iconCls: 'user',
-                    xtype: 'formpanel',
-                    url: 'contact.php',
-                    layout: 'vbox',
-
-                    items: [
-                        {
-                            xtype: 'fieldset',
-                            title: 'Mi perfil',
-                            instructions: '(la descripción es opcional)',
-                            items: [
-                                {
-                                    xtype: 'textfield',
-                                    label: 'Nombre'
-                                },
-                                {
-                                    xtype: 'emailfield',
-                                    label: 'Email'
-                                },
-                                {
-                                    xtype: 'textareafield',
-                                    label: 'Descripción'
-                                }
-                            ]
-                        },
-                        {
-                            xtype: 'button',
-                            text: 'Guardar',
-                            ui: 'confirm',
-                            handler: function() {
-                                this.up('formpanel').submit();
-                            }
-                        }
-                    ]
-                }
+            {
+                xtype: 'toolbar',
+                docked: 'top',
+                title: 'Perfil'
+            },
+            {
+                xtype: 'fieldset',
+                title: 'Gustos Musical',
+                items: [
+                    {
+                        xtype: 'checkboxfield',
+                        flex: 1,
+                        width: 300,
+                        label: 'Rock'
+                    },
+                    {
+                        xtype: 'checkboxfield',
+                        label: 'Reggae'
+                    },
+                    {
+                        xtype: 'checkboxfield',
+                        label: 'Electronica'
+                    },
+                    {
+                        xtype: 'checkboxfield',
+                        label: 'Ambiente'
+                    },
+                    {
+                        xtype: 'checkboxfield',
+                        label: 'Otros'
+                    }
+                ]
+            },
+            {
+                xtype: 'fieldset',
+                title: 'Cuidades',
+                items: [
+                    {
+                        xtype: 'checkboxfield',
+                        flex: 1,
+                        width: 300,
+                        label: 'San Jose'
+                    },
+                    {
+                        xtype: 'checkboxfield',
+                        label: 'Heredia'
+                    },
+                    {
+                        xtype: 'checkboxfield',
+                        label: 'Alajuela'
+                    },
+                    {
+                        xtype: 'checkboxfield',
+                        label: 'Puntarenas'
+                    },
+                    {
+                        xtype: 'checkboxfield',
+                        label: 'Cartago'
+                    }
+                ]
+            },
+            {
+                xtype: 'button',
+                id: '',
+                ui: 'facebook',
+                text: 'Guardar Cambios'
+            }
         ]
     }
 
