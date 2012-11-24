@@ -17,10 +17,13 @@ Ext.define('JWF.view.MyPanel1', {
     extend: 'Ext.Panel',
 
     config: {
+        fullscreen: true,
         items: [
             {
-                xtype: 'label',
-                html: 'asdasd'
+                xtype: 'nestedlist',
+                displayField: 'title',
+                store: 'MyJsonTreeStore',
+                title: 'TOPs'
             }
         ]
     }

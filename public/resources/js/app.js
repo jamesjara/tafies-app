@@ -29,7 +29,8 @@ Ext.application({
         'Run'
     ],
     stores: [
-        'Runs'
+        'Runs',
+        'MyJsonTreeStore'
     ],
     views: [
         'run.List',
