@@ -19,8 +19,8 @@ Ext.define('JWF.view.MyPanel1', {
         fullscreen: true,
         items: [
 				{
-					height: 300,
-					width: 300,
+					height: '100%',
+					width: '100%',
                     xtype: 'nestedlist',
                     title: 'TOPs',
                     iconCls: 'star',
