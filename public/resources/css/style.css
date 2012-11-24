@@ -89,14 +89,14 @@
     		border-bottom:1px solid grey;
     	}
 		
-		.x-list-container{
+	/*	.x-list-container{
     		background-color:white;
     	}
-.x-list .x-list-item{
+		.x-list .x-list-item{
     		background-color:lightgray;
-    	}
-		
-		.x-scroll-container {
+    	}*/
+/*		
+.x-scroll-container {
 background-color: white;
 }
 
@@ -106,4 +106,4 @@ background-color: white;
 
 .setButton{
 -webkit-mask-image:url('/resources/images/setting.png'); 
-}
+}*/
