@@ -107,6 +107,11 @@ Ext.define('JWF.controller.Runs', {
     },
 
     onButtonTap1: function(button, e, options) {
+        var main = Ext.getCmp('main'),
+            runList = Ext.getCmp('runList'),
+            noFriends = Ext.getCmp('noFriends');
+
+
         if (!runList) {
             runList = Ext.create('JWF.view.run.List', {
                 id: 'runList'
