@@ -22,38 +22,34 @@ Ext.define('JWF.store.MyJsonTreeStore1', {
         proxy: {
             type: 'memory',
             data: {
-                data: [
-                    {
-                        title: 'El lugar m\u00e1s entretenido',
-                        link: 'daata',
-                        author: 'daata',
-                        publishedDate: 'daata',
-                        contentSnippet: 'daata',
-                        content: 'daata',
-                        leaf: true,
-                        id: 'ap1'
-                    },
-                    {
-                        title: 'Los mejores precios',
-                        link: 'daata',
-                        author: 'daata',
-                        publishedDate: 'daata',
-                        contentSnippet: 'daata',
-                        content: 'daata',
-                        leaf: true,
-                        id: 'ap2'
-                    },
-                    {
-                        title: 'Mejores promociones',
-                        link: 'daata',
-                        author: 'daata',
-                        publishedDate: 'daata',
-                        contentSnippet: 'daata',
-                        content: 'daata',
-                        leaf: true,
-                        id: 'ap3'
-                    }
-                ]
+                title: 'El lugar m\u00e1s entretenido',
+                link: 'daata',
+                author: 'daata',
+                publishedDate: 'daata',
+                contentSnippet: 'daata',
+                content: 'daata',
+                leaf: true,
+                id: 'ap1'
+            },
+            {
+                title: 'Los mejores precios',
+                link: 'daata',
+                author: 'daata',
+                publishedDate: 'daata',
+                contentSnippet: 'daata',
+                content: 'daata',
+                leaf: true,
+                id: 'ap2'
+            },
+            {
+                title: 'Mejores promociones',
+                link: 'daata',
+                author: 'daata',
+                publishedDate: 'daata',
+                contentSnippet: 'daata',
+                content: 'daata',
+                leaf: true,
+                id: 'ap3'
             },
             reader: {
                 type: 'json',
