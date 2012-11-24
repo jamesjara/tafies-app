@@ -74,7 +74,13 @@ Ext.define('JWF.view.Main', {
                     },
                     {
                         xtype: 'button',
-                        ui: 'round',
+                        ui: 'decline',
+                        text: 'Feeds'
+                    },
+                    {
+                        xtype: 'button',
+                        cls: 'setButton',
+                        ui: 'confirm',
                         text: 'Feeds'
                     }
                 ]

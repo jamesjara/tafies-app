@@ -23,15 +23,7 @@ Ext.define('JWF.view.MyPanel2', {
             {
                 xtype: 'toolbar',
                 docked: 'top',
-                title: 'Perfil',
-                items: [
-                    {
-                        xtype: 'button',
-                        id: 'addRunBackBtn',
-                        ui: 'back',
-                        text: 'Back'
-                    }
-                ]
+                title: 'Perfil'
             },
             {
                 xtype: 'fieldset',
