@@ -79,7 +79,7 @@ Ext.define('JWF.controller.Runs', {
     showTOP: function(button, e, options) {
         if (!this.showTOP) {
             this.showTOP = Ext.create('JWF.view.MyPanel1', {
-                id: 'runTOP'
+                id: 'showTOP'
             });
         }
         var main = Ext.getCmp('main'),
@@ -87,7 +87,6 @@ Ext.define('JWF.controller.Runs', {
             noFriends = Ext.getCmp('noFriends');
 
         main.setActiveItem( this.showTOP);
-
 
     },
 
@@ -102,8 +101,6 @@ Ext.define('JWF.controller.Runs', {
             noFriends = Ext.getCmp('noFriends');
 
         main.setActiveItem( this.showPROFILE);
-        Ext.getCmp('runForm').hide();
-        Ext.getCmp('runTOP').hide();
     },
 
     onButtonTap1: function(button, e, options) {
