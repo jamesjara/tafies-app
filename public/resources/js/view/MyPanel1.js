@@ -15,21 +15,46 @@
 
 Ext.define('JWF.view.MyPanel1', {
     extend: 'Ext.Panel',
-
     config: {
-        fullscreen: true,
+		layout: 'fit',
         items: [
-            {
-                xtype: 'nestedlist',
-                styleHtmlContent: true,
-                scrollable: true,
-                detailCard: {
-                    xclass: 'JWF.view.Form'
-                },
-                store: 'MyJsonTreeStore',
-                title: 'TOPs'
-            }
+				{
+					layout: 'fit',
+                    xtype: 'nestedlist',
+                    title: 'TOPs',
+                    iconCls: 'star',
+                    displayField: 'title',
+                    store: {
+						//autoload:true,
+                        type: 'tree',
+                        fields: [
+                            'title', 'link', 'author', 'contentSnippet', 'content',
+                            {name: 'leaf', defaultValue: true}
+                        ],
+                        root: {
+                            leaf: false
+                        },
+                        proxy: {
+							type: 'jsonp',
+							url: 'http://news.innosystem.org/data.php',
+							reader: {
+								type: 'json',
+								rootProperty: 'data'
+							}
+                        }
+                    },
+                    detailCard: {
+                        xtype: 'panel',
+						layout: 'fit',
+                        scrollable: true,
+                        styleHtmlContent: true
+                    },
+                    listeners: {
+                        itemtap: function(nestedList, list, index, element, post) {
+                            this.getDetailCard().setHtml(post.get('content'));
+                        }
+                    }
+                }
         ]
     }
-
 });
