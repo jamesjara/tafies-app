@@ -74,10 +74,17 @@ Ext.define('JWF.controller.Runs', {
     },
 
     showTOP: function() {
-        this.showTOP = Ext.create('JWF.view.MyPanel1', {
+        showTOP = Ext.create('JWF.view.MyPanel1', {
             id: 'runTOP'
         });
-        Ext.Viewport.setActiveItem(this.showTOP);
+
+
+        var main = Ext.getCmp('main'),
+            runList = Ext.getCmp('runList'),
+            noFriends = Ext.getCmp('noFriends');
+
+
+        main.setActiveItem(showTOP);
     },
 
     init: function(application) {
