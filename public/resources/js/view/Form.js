@@ -21,9 +21,13 @@ Ext.define('JWF.view.Form', {
         scrollable: false,
         items: [
             {
+                xtype: 'label',
+                html: 'ASD'
+            },
+            {
                 xtype: 'toolbar',
                 docked: 'top',
-                title: 'New Jog',
+                title: 'Nuevo Tweet',
                 items: [
                     {
                         xtype: 'button',
@@ -39,12 +43,12 @@ Ext.define('JWF.view.Form', {
                     {
                         xtype: 'textfield',
                         id: 'locationField',
-                        placeHolder: 'Where?'
+                        placeHolder: 'Donde estas'
                     },
                     {
                         xtype: 'textfield',
                         id: 'distanceField',
-                        placeHolder: 'How Many Miles?'
+                        placeHolder: 'Que piensas de lugar?'
                     }
                 ]
             },
@@ -52,7 +56,7 @@ Ext.define('JWF.view.Form', {
                 xtype: 'button',
                 id: 'addRunButton',
                 ui: 'facebook',
-                text: 'Add Jog'
+                text: 'Agregar Estado'
             }
         ]
     }

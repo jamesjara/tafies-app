@@ -52,7 +52,7 @@ Ext.application({
     ],
 
     launch: function() {
-        this.facebookAppId = '';
+        this.facebookAppId = '168589329950694';
 
         if (this.facebookAppId === '') {
             Ext.create('Ext.Component', {
