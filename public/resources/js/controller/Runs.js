@@ -107,10 +107,12 @@ Ext.define('JWF.controller.Runs', {
     },
 
     onButtonTap1: function(button, e, options) {
-        Ext.Viewport.setActiveItem(Ext.getCmp('main'));
-        Ext.getCmp('runForm').hide();
-        Ext.getCmp('runprofile').hide();
-        Ext.getCmp('runTOP').hide();
+        if (!runList) {
+            runList = Ext.create('JWF.view.run.List', {
+                id: 'runList'
+            });
+        }
+        main.setActiveItem(runList);
     },
 
     init: function(application) {
