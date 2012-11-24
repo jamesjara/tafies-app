@@ -94,6 +94,12 @@
 		.x-list-container{
     		background-color:white;
     	}
+		.x-scroll-scroller {
+position: absolute;
+min-width: 100%;
+min-height: 100%;
+background-color: white;
+}
 	/*	
 		.x-list .x-list-item{
     		background-color:lightgray;
