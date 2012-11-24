@@ -22,7 +22,7 @@ Ext.define('JWF.view.Form', {
         items: [
             {
                 xtype: 'label',
-                html: 'ASD'
+                html: 'GPS: STEINVORTH '
             },
             {
                 xtype: 'toolbar',
@@ -42,13 +42,31 @@ Ext.define('JWF.view.Form', {
                 items: [
                     {
                         xtype: 'textfield',
-                        id: 'locationField',
-                        placeHolder: 'Donde estas'
-                    },
-                    {
-                        xtype: 'textfield',
                         id: 'distanceField',
                         placeHolder: 'Que piensas de lugar?'
+                    }
+                ]
+            },
+            {
+                xtype: 'datepickerfield',
+                label: 'Fecha',
+                placeHolder: 'mm/dd/yyyy'
+            },
+            {
+                xtype: 'fieldset',
+                title: 'Media',
+                items: [
+                    {
+                        xtype: 'urlfield',
+                        label: 'Fotografia',
+                        placeHolder: 'http://example.com'
+                    },
+                    {
+                        xtype: 'sliderfield',
+                        label: 'Puntuancion',
+                        value: [
+                            80
+                        ]
                     }
                 ]
             },
