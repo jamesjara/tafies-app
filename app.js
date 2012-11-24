@@ -169,8 +169,8 @@ app.get('/data', function(req, res) {
 });
 
 
-app.get(^\/users?(?:\/(\d+)(?:\.\.(\d+))?)?/, function(req, res){
-        res.send(req.params);
+app.get('/data2', function(req, res){
+        res.send( req.param("node"));
 });
 
 
