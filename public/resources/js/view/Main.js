@@ -61,6 +61,12 @@ Ext.define('JWF.view.Main', {
                         cls: 'fbButton',
                         id: 'showTOP',
                         iconCls: 'showFormBtn'
+                    },
+                    {
+                        xtype: 'button',
+                        cls: 'fbButton',
+                        id: 'showPROFILE',
+                        iconCls: 'showFormBtn'
                     }
                 ]
             }

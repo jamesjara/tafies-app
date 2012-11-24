@@ -39,7 +39,8 @@ Ext.application({
         'Main',
         'Login',
         'Form',
-        'MyPanel1'
+        'MyPanel1',
+        'MyPanel2'
     ],
     icon: {
         '57': 'resources/icons/icon.png',
