@@ -26,8 +26,7 @@ Ext.define('JWF.view.MyPanel1', {
                 detailCard: {
                     xclass: 'JWF.view.Form'
                 },
-                displayField: 'title',
-                store: 'MyJsonTreeStore1',
+                store: 'MyJsonTreeStore',
                 title: 'TOPs'
             }
         ]
