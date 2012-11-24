@@ -101,9 +101,9 @@ background-color: white;
 }
 
 .topButton{
--webkit-mask-image:url('resources/star.png'); 
+-webkit-mask-image:url('/resources/star.png'); 
 }
 
 .setButton{
--webkit-mask-image:url('resources/setting.png'); 
+-webkit-mask-image:url('/resources/setting.png'); 
 }
