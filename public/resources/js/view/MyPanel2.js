@@ -20,32 +20,43 @@ Ext.define('JWF.view.MyPanel2', {
         padding: '15 15 15 15',
         scrollable: false,
         items: [
-            {
-                xtype: 'toolbar',
-                docked: 'top',
-                title: 'Perfil'
-            },
-            {
-                xtype: 'fieldset',
-                items: [
-                    {
-                        xtype: 'textfield',
-                        id: 'locationField',
-                        placeHolder: 'Donde estas'
-                    },
-                    {
-                        xtype: 'textfield',
-                        id: 'distanceField',
-                        placeHolder: 'Que piensas de lugar?'
-                    }
-                ]
-            },
-            {
-                xtype: 'button',
-                id: '',
-                ui: 'facebook',
-                text: 'Guardar Cambios'
-            }
+           {
+                    title: 'Mi Perfil',
+                    iconCls: 'user',
+                    xtype: 'formpanel',
+                    url: 'contact.php',
+                    layout: 'vbox',
+
+                    items: [
+                        {
+                            xtype: 'fieldset',
+                            title: 'Mi perfil',
+                            instructions: '(la descripción es opcional)',
+                            items: [
+                                {
+                                    xtype: 'textfield',
+                                    label: 'Nombre'
+                                },
+                                {
+                                    xtype: 'emailfield',
+                                    label: 'Email'
+                                },
+                                {
+                                    xtype: 'textareafield',
+                                    label: 'Descripción'
+                                }
+                            ]
+                        },
+                        {
+                            xtype: 'button',
+                            text: 'Guardar',
+                            ui: 'confirm',
+                            handler: function() {
+                                this.up('formpanel').submit();
+                            }
+                        }
+                    ]
+                }
         ]
     }
 
