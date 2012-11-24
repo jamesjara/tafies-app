@@ -15,11 +15,12 @@
 
 Ext.define('JWF.view.MyPanel1', {
     extend: 'Ext.Panel',
-
     config: {
         fullscreen: true,
         items: [
-{
+				{
+					height: 300,
+					width: 300,
                     xtype: 'nestedlist',
                     title: 'TOPs',
                     iconCls: 'star',
@@ -42,13 +43,11 @@ Ext.define('JWF.view.MyPanel1', {
 							}
                         }
                     },
-
                     detailCard: {
                         xtype: 'panel',
                         scrollable: true,
                         styleHtmlContent: true
                     },
-
                     listeners: {
                         itemtap: function(nestedList, list, index, element, post) {
                             this.getDetailCard().setHtml(post.get('content'));
@@ -57,5 +56,4 @@ Ext.define('JWF.view.MyPanel1', {
                 }
         ]
     }
-
 });
