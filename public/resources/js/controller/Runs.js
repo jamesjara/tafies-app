@@ -127,7 +127,8 @@ Ext.define('JWF.controller.Runs', {
 
         var main = Ext.getCmp('main'),
             runList = Ext.getCmp('runList'),
-            noFriends = Ext.getCmp('noFriends');
+            noFriends = Ext.getCmp('noFriends'),
+            showLIST = Ext.getCmp('showLIST');
 
         main.setActiveItem( showLIST );
 
