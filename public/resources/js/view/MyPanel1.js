@@ -19,6 +19,7 @@ Ext.define('JWF.view.MyPanel1', {
 		layout: 'fit',
         items: [
 				{
+					style: 'background-color: #759E60',
 					layout: 'fit',
                     xtype: 'nestedlist',
                     title: 'TOPs', 
@@ -44,8 +45,8 @@ Ext.define('JWF.view.MyPanel1', {
                     },
                     detailCard: {
                         xtype: 'panel',
-						layout: 'fit',
-                        scrollable: true,
+						//layout: 'fit',
+                        //scrollable: true,
                         styleHtmlContent: true,
 						style: 'background-color: #759E60'
                     },
