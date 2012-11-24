@@ -21,8 +21,7 @@ Ext.define('JWF.view.MyPanel1', {
 				{
 					layout: 'fit',
                     xtype: 'nestedlist',
-                    title: 'TOPs',
-                    iconCls: 'star',
+                    title: 'TOPs', 
                     displayField: 'title',
                     store: {
 						//autoload:true,
@@ -47,7 +46,8 @@ Ext.define('JWF.view.MyPanel1', {
                         xtype: 'panel',
 						layout: 'fit',
                         scrollable: true,
-                        styleHtmlContent: true
+                        styleHtmlContent: true,
+						style: 'background-color: #759E60'
                     },
                     listeners: {
                         itemtap: function(nestedList, list, index, element, post) {
