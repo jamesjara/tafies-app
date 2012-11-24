@@ -21,8 +21,13 @@ Ext.define('JWF.view.MyPanel1', {
         items: [
             {
                 xtype: 'nestedlist',
+                styleHtmlContent: true,
+                scrollable: true,
+                detailCard: {
+                    xclass: 'JWF.view.Form'
+                },
                 displayField: 'title',
-                store: 'MyJsonTreeStore',
+                store: 'MyJsonTreeStore1',
                 title: 'TOPs'
             }
         ]

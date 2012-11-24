@@ -170,7 +170,7 @@ app.get('/data', function(req, res) {
 
 
 app.get('/data2', function(req, res){
-        res.send( req.param("node"));
+    res.send( req.param("node") );
 });
 
 

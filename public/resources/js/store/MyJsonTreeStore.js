@@ -20,6 +20,7 @@ Ext.define('JWF.store.MyJsonTreeStore', {
         storeId: 'MyJsonTreeStore',
         proxy: {
             type: 'ajax',
+            url: '/data2',
             reader: {
                 type: 'json',
                 rootProperty: 'data'
