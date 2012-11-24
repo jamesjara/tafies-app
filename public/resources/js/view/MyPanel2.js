@@ -23,6 +23,7 @@ Ext.define('JWF.view.MyPanel2', {
             {
                 xtype: 'toolbar',
                 docked: 'top',
+                ui: 'light',
                 title: 'Perfil'
             },
             {
@@ -32,7 +33,6 @@ Ext.define('JWF.view.MyPanel2', {
                     {
                         xtype: 'checkboxfield',
                         flex: 1,
-                        width: 300,
                         label: 'Rock'
                     },
                     {
@@ -60,7 +60,6 @@ Ext.define('JWF.view.MyPanel2', {
                     {
                         xtype: 'checkboxfield',
                         flex: 1,
-                        width: 300,
                         label: 'San Jose'
                     },
                     {

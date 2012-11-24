@@ -61,27 +61,20 @@ Ext.define('JWF.view.Main', {
                     {
                         xtype: 'button',
                         id: 'showTOP',
-                        ui: 'confirm',
-                        iconCls: 'showFormBtn',
+                        ui: 'decline',
                         text: 'TOP'
                     },
                     {
                         xtype: 'button',
-                        id: 'showPROFILE',
+                        id: 'addRunBackBtn',
                         ui: 'action',
-                        iconCls: 'showFormBtn',
-                        text: 'Profile'
+                        text: 'Tweets'
                     },
                     {
                         xtype: 'button',
-                        ui: 'decline',
-                        text: 'Feeds'
-                    },
-                    {
-                        xtype: 'button',
-                        cls: 'setButton',
+                        id: 'showPROFILE',
                         ui: 'confirm',
-                        text: 'Feeds'
+                        text: 'Preferencias'
                     }
                 ]
             }
