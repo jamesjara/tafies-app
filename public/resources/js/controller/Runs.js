@@ -41,16 +41,13 @@ Ext.define('JWF.controller.Runs', {
 
     addRun: function(button, e, options) {
         var distance = Ext.getCmp('distanceField').getValue(),
-            location = Ext.getCmp('locationField').getValue(),
-            caption = JWF.userData.first_name + ' ran ' + distance + ' miles';
+            location = 'STEINVORTH',
+            caption = JWF.userData.first_name + ' esta en este momento en ' + location ;
 
-        if (location) {
-            caption += ' in ' + location;
-        }
 
         Ext.getCmp('runForm').setMasked({
             xtype: 'loadmask',
-            message: 'Adding New Jog...'
+            message: 'Agregando tweet..'
         });
 
         Ext.Ajax.request({
@@ -58,7 +55,7 @@ Ext.define('JWF.controller.Runs', {
             method: 'POST',
             params: {
                 location: location,
-                distance: distance
+                distance: caption
             },
             callback: this.onAddRun,
             scope: this
