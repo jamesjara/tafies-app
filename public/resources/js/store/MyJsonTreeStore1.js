@@ -30,7 +30,7 @@ Ext.define('JWF.store.MyJsonTreeStore1', {
                         publishedDate: 'daata',
                         contentSnippet: 'daata',
                         content: 'daata',
-                        leaf: false,
+                        leaf: true,
                         id: 'ap1'
                     },
                     {
@@ -40,7 +40,7 @@ Ext.define('JWF.store.MyJsonTreeStore1', {
                         publishedDate: 'daata',
                         contentSnippet: 'daata',
                         content: 'daata',
-                        leaf: false,
+                        leaf: true,
                         id: 'ap2'
                     },
                     {
@@ -50,7 +50,7 @@ Ext.define('JWF.store.MyJsonTreeStore1', {
                         publishedDate: 'daata',
                         contentSnippet: 'daata',
                         content: 'daata',
-                        leaf: false,
+                        leaf: true,
                         id: 'ap3'
                     }
                 ]
