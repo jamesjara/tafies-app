@@ -69,6 +69,15 @@ Ext.define('JWF.view.Main', {
                         iconCls: 'signoutBtn'
                     }
                 ]
+            },
+            {
+                xtype: 'panel',
+                items: [
+                    {
+                        xtype: 'label',
+                        html: 'asdasd'
+                    }
+                ]
             }
         ]
     },
