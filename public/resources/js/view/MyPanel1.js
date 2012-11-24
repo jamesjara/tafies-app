@@ -18,6 +18,9 @@ Ext.define('JWF.view.MyPanel1', {
 
     config: {
         fullscreen: true,
+        layout: {
+            type: 'fit'
+        },
         items: [
             {
                 xtype: 'label',
