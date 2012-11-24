@@ -90,8 +90,8 @@ Ext.define('JWF.controller.Runs', {
     },
 
     onButtonTap: function(button, e, options) {
-        if (!this.showTOP) {
-            this.showTOP = Ext.create('JWF.view.MyPanel2', {
+        if (!this.showPROFILE) {
+            this.showPROFILE = Ext.create('JWF.view.MyPanel2', {
                 id: 'runprofile'
             });
         }
@@ -99,7 +99,7 @@ Ext.define('JWF.controller.Runs', {
             runList = Ext.getCmp('runList'),
             noFriends = Ext.getCmp('noFriends');
 
-        main.setActiveItem( this.showTOP);
+        main.setActiveItem( this.showPROFILE);
     },
 
     init: function(application) {
