@@ -131,7 +131,8 @@ Ext.define('JWF.controller.Runs', {
 
         main.setActiveItem( this.showLIST );
 
-        ALERT('SA');
+        alert('sa');
+        alert('sa');
     },
 
     init: function(application) {

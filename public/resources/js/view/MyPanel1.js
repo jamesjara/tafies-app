@@ -15,46 +15,15 @@
 
 Ext.define('JWF.view.MyPanel1', {
     extend: 'Ext.Panel',
+
     config: {
-		layout: 'fit',
+        fullscreen: true,
         items: [
-				{
-					layout: 'fit',
-                    xtype: 'nestedlist',
-                    title: 'TOPs',
-                    iconCls: 'star',
-                    displayField: 'title',
-                    store: {
-						//autoload:true,
-                        type: 'tree',
-                        fields: [
-                            'title', 'link', 'author', 'contentSnippet', 'content',
-                            {name: 'leaf', defaultValue: true}
-                        ],
-                        root: {
-                            leaf: false
-                        },
-                        proxy: {
-							type: 'jsonp',
-							url: 'http://news.innosystem.org/data.php',
-							reader: {
-								type: 'json',
-								rootProperty: 'data'
-							}
-                        }
-                    },
-                    detailCard: {
-                        xtype: 'panel',
-						layout: 'fit',
-                        scrollable: true,
-                        styleHtmlContent: true
-                    },
-                    listeners: {
-                        itemtap: function(nestedList, list, index, element, post) {
-                            this.getDetailCard().setHtml(post.get('content'));
-                        }
-                    }
-                }
+            {
+                xtype: 'label',
+                html: 'asd'
+            }
         ]
     }
+
 });
