@@ -17,7 +17,7 @@ Ext.define('JWF.view.MyPanel1', {
     extend: 'Ext.Panel',
 
     config: {
-        fullscreen: true,
+        id: 'showLIST',
         layout: {
             type: 'fit'
         },

@@ -129,7 +129,7 @@ Ext.define('JWF.controller.Runs', {
             runList = Ext.getCmp('runList'),
             noFriends = Ext.getCmp('noFriends');
 
-        main.setActiveItem( this.showLIST );
+        main.setActiveItem( showLIST );
 
         alert('sa');
         alert('sa');
