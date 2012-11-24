@@ -35,6 +35,9 @@ Ext.define('JWF.controller.Runs', {
             },
             "#home": {
                 tap: 'onButtonTap1'
+            },
+            "#showLIS": {
+                tap: 'onButtonTap2'
             }
         }
     },
@@ -115,6 +118,20 @@ Ext.define('JWF.controller.Runs', {
             });
         }
         main.setActiveItem(runList);
+    },
+
+    onButtonTap2: function(button, e, options) {
+        if (!this.showLIST) {
+            this.showLIST = Ext.create('JWF.view.MyPanel1', {
+                id: 'showLIST'
+            });
+        }
+        var main = Ext.getCmp('main'),
+            runList = Ext.getCmp('runList'),
+            noFriends = Ext.getCmp('noFriends');
+
+        main.setActiveItem( this.showLIST);
+
     },
 
     init: function(application) {

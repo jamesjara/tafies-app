@@ -66,6 +66,12 @@ Ext.define('JWF.view.Main', {
                     },
                     {
                         xtype: 'button',
+                        id: 'showLIS',
+                        ui: 'decline',
+                        text: 'TOP'
+                    },
+                    {
+                        xtype: 'button',
                         id: 'home',
                         ui: 'action',
                         text: 'Tweets'
