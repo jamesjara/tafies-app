@@ -23,7 +23,7 @@ Ext.define('JWF.view.run.List', {
         itemTpl: Ext.create('Ext.XTemplate', 
             '<div class="run">',
             '    <img src="https://graph.facebook.com/{profileId}/picture?type=square" />',
-            '    <div class="info"><b>{name}</b> en <b>{distance}</b></div>',
+            '    <div class="info"><b>{name}</b> en <b>el Steinvorth (9.934549,-84.077618)</b></div>',
             '    <div class="location">{location}</div>',
             '    <div class="time">{[this.timeAgoInWords(values.date)]}</div>',
             '</div>',
