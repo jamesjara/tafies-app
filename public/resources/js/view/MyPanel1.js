@@ -19,13 +19,13 @@ Ext.define('JWF.view.MyPanel1', {
 		layout: 'fit',
         items: [
 				{
-					//style: 'background-color: #759E60',
 					layout: 'fit',
                     xtype: 'nestedlist',
-                    title: 'TOPs', 
+                    title: 'TOPs',
+                    iconCls: 'star',
                     displayField: 'title',
                     store: {
-						autoload:true,
+						//autoload:true,
                         type: 'tree',
                         fields: [
                             'title', 'link', 'author', 'contentSnippet', 'content',
@@ -45,20 +45,13 @@ Ext.define('JWF.view.MyPanel1', {
                     },
                     detailCard: {
                         xtype: 'panel',
-						//layout: 'fit',
+						layout: 'fit',
                         scrollable: true,
-                        styleHtmlContent: true,
-						//style: 'background-color: #759E60'
+                        styleHtmlContent: true
                     },
                     listeners: {
                         itemtap: function(nestedList, list, index, element, post) {
-							//alert('sdf');
-							//this.getDetailCard().setStyle('background-color','red');
-                            this.getDetailCard().setHtml(post.get('content'));							
-							/*return new Ext.Panel({
-								title: 'Details about ',
-								html: post.get('content') + ' is great'
-							});*/		
+                            this.getDetailCard().setHtml(post.get('content'));
                         }
                     }
                 }

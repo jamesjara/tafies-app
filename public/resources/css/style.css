@@ -52,3 +52,39 @@
 #splash p {
     padding-top: 10px;
 }
+
+
+#bar_content:hover{
+    		width:100%;
+    		float:left;
+    	}
+    	#bar_image{
+    		width:49%;
+    		float:left;
+    		
+    	}
+    	#bar_rate{
+    		float:left;
+    		width:49%;
+    		margin-left:2%;
+    		font-size: 20px;
+    	}
+    	#bar_description{
+    		float:left;
+    		width:100%;
+    		
+    		font-size:15px;
+    	}
+    	#bar_comments{
+    		width: 100%;
+    		overflow:hidden;
+    		float:left;
+    		margin-top:2%;
+    	}
+    	.bar_comment{
+    		float:left;
+    		width: 100%;
+    		font-size:15px;
+    		border-top:1px solid grey;
+    		border-bottom:1px solid grey;
+    	}
