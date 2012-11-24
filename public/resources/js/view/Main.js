@@ -58,13 +58,13 @@ Ext.define('JWF.view.Main', {
                 items: [
                     {
                         xtype: 'button',
-                        cls: 'fbButton',
+                        cls: 'topButton',
                         id: 'showTOP',
                         iconCls: 'showFormBtn'
                     },
                     {
                         xtype: 'button',
-                        cls: 'fbButton',
+                        cls: 'setButton',
                         id: 'showPROFILE',
                         iconCls: 'showFormBtn'
                     }
