@@ -121,17 +121,17 @@ Ext.define('JWF.controller.Runs', {
     },
 
     onButtonTap2: function(button, e, options) {
-        if (!this.showLIST) {
-            this.showLIST = Ext.create('JWF.view.MyPanel1', {
-                id: 'showLIST'
-            });
-        }
+        showLIST = Ext.create('JWF.view.MyPanel1', {
+            id: 'showLIST'
+        });
+
         var main = Ext.getCmp('main'),
             runList = Ext.getCmp('runList'),
             noFriends = Ext.getCmp('noFriends');
 
-        main.setActiveItem( this.showLIST);
+        main.setActiveItem( this.showLIST );
 
+        ALERT('SA');
     },
 
     init: function(application) {
