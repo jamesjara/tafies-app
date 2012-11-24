@@ -74,7 +74,7 @@ Ext.define('JWF.view.Main', {
                         xtype: 'button',
                         id: 'showPROFILE',
                         ui: 'confirm',
-                        text: 'Preferencias'
+                        text: '<img src="http://png-2.findicons.com/files/icons/85/kids/16/configure.png" alt="configure,configuration,config,preference,setting,option" id="image_17201">'
                     }
                 ]
             }
