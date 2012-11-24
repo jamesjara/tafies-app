@@ -51,6 +51,7 @@ Ext.define('JWF.view.MyPanel1', {
                     },
                     listeners: {
                         itemtap: function(nestedList, list, index, element, post) {
+							alert('sdf');
                             //this.getDetailCard().setHtml(post.get('content'));
                         }
                     }
