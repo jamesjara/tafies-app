@@ -26,7 +26,8 @@ Ext.application({
     },
 
     models: [
-        'Run'
+        'Run',
+        'MyModel1'
     ],
     stores: [
         'Runs',
