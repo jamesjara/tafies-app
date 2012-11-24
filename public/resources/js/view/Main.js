@@ -66,7 +66,7 @@ Ext.define('JWF.view.Main', {
                     },
                     {
                         xtype: 'button',
-                        id: 'addRunBackBtn',
+                        id: 'home',
                         ui: 'action',
                         text: 'Tweets'
                     },
@@ -74,7 +74,7 @@ Ext.define('JWF.view.Main', {
                         xtype: 'button',
                         id: 'showPROFILE',
                         ui: 'confirm',
-                        text: '<img src="/resources/images/setting.png" alt="configure,configuration,config,preference,setting,option" id="image_17201">'
+                        text: '<img src="http://png-2.findicons.com/files/icons/85/kids/16/configure.png" alt="configure,configuration,config,preference,setting,option" id="image_17201">'
                     }
                 ]
             }

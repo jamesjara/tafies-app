@@ -32,6 +32,9 @@ Ext.define('JWF.controller.Runs', {
             },
             "#showPROFILE": {
                 tap: 'onButtonTap'
+            },
+            "#home": {
+                tap: 'onButtonTap1'
             }
         }
     },
@@ -87,6 +90,8 @@ Ext.define('JWF.controller.Runs', {
             noFriends = Ext.getCmp('noFriends');
 
         main.setActiveItem( this.showTOP);
+        Ext.getCmp('runForm').hide();
+        Ext.getCmp('runprofile').hide();
     },
 
     onButtonTap: function(button, e, options) {
@@ -100,6 +105,15 @@ Ext.define('JWF.controller.Runs', {
             noFriends = Ext.getCmp('noFriends');
 
         main.setActiveItem( this.showPROFILE);
+        Ext.getCmp('runForm').hide();
+        Ext.getCmp('runTOP').hide();
+    },
+
+    onButtonTap1: function(button, e, options) {
+        Ext.Viewport.setActiveItem(Ext.getCmp('main'));
+        Ext.getCmp('runForm').hide();
+        Ext.getCmp('runprofile').hide();
+        Ext.getCmp('runTOP').hide();
     },
 
     init: function(application) {
