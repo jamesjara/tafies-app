@@ -23,7 +23,7 @@ Ext.define('JWF.view.NoFriends', {
         tpl: [
             '<div class="welcomeNoFriends">',
             '<img src="https://graph.facebook.com/{id}/picture?type=square" />',
-            'Welcome to Jog with Friends, <b>{first_name}</b>!',
+            'Bienvenido a TAFIES, <b>{first_name}</b>!',
             '</div>'
         ]
     }
