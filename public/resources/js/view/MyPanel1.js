@@ -53,6 +53,7 @@ Ext.define('JWF.view.MyPanel1', {
                     listeners: {
                         itemtap: function(nestedList, list, index, element, post) {
 							//alert('sdf');
+							this.getDetailCard().setstyle('background-color','red');
                             this.getDetailCard().setHtml(post.get('content'));							
 							/*return new Ext.Panel({
 								title: 'Details about ',
