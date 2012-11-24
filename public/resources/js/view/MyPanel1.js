@@ -26,6 +26,7 @@ Ext.define('JWF.view.MyPanel1', {
                     iconCls: 'star',
                     displayField: 'title',
                     store: {
+						autoload:true,
                         type: 'tree',
                         fields: [
                             'title', 'link', 'author', 'contentSnippet', 'content',
