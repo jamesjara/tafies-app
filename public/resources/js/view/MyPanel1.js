@@ -17,10 +17,10 @@ Ext.define('JWF.view.MyPanel1', {
     extend: 'Ext.Panel',
     config: {
         fullscreen: true,
+		layout: 'fit',
         items: [
 				{
-					height: '100%',
-					width: '100%',
+					layout: 'fit',
                     xtype: 'nestedlist',
                     title: 'TOPs',
                     iconCls: 'star',
