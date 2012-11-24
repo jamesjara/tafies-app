@@ -165,8 +165,14 @@ app.get('/node=ap1', function(req, res) {
 
 app.get('/data', function(req, res) {
     //res.json('test');
-	res.('{"data":[{"title":"El lugar m\u00e1s entretenido","link":"daata","author":"daata","publishedDate":"daata","contentSnippet":"daata","content":"daata","leaf":false,"id":"ap1"},{"title":"Los mejores precios","link":"daata","author":"daata","publishedDate":"daata","contentSnippet":"daata","content":"daata","leaf":false,"id":"ap2"},{"title":"Mejores promociones","link":"daata","author":"daata","publishedDate":"daata","contentSnippet":"daata","content":"daata","leaf":false,"id":"ap3"}]');
+	res.send('{"data":[{"title":"El lugar m\u00e1s entretenido","link":"daata","author":"daata","publishedDate":"daata","contentSnippet":"daata","content":"daata","leaf":false,"id":"ap1"},{"title":"Los mejores precios","link":"daata","author":"daata","publishedDate":"daata","contentSnippet":"daata","content":"daata","leaf":false,"id":"ap2"},{"title":"Mejores promociones","link":"daata","author":"daata","publishedDate":"daata","contentSnippet":"daata","content":"daata","leaf":false,"id":"ap3"}]');
 });
+
+
+app.get('/data2/:node', function(req, res){
+    res.send('user ' + req.params.id);
+});
+
 
 /**
  * Return a list of runs for the user and all the user's friends
