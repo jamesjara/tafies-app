@@ -36,6 +36,7 @@ Ext.define('JWF.view.Main', {
                         xtype: 'button',
                         cls: 'fbButton',
                         id: 'showFormButton',
+                        ui: 'confirm',
                         iconCls: 'showFormBtn'
                     },
                     {
@@ -50,6 +51,7 @@ Ext.define('JWF.view.Main', {
                 xtype: 'toolbar',
                 docked: 'bottom',
                 id: 'mainToolbar2',
+                ui: 'light',
                 layout: {
                     align: 'center',
                     pack: 'center',
@@ -59,16 +61,21 @@ Ext.define('JWF.view.Main', {
                     {
                         xtype: 'button',
                         id: 'showTOP',
-                        iconCls: 'showFormBtn'
+                        ui: 'confirm',
+                        iconCls: 'showFormBtn',
+                        text: 'TOP'
                     },
                     {
                         xtype: 'button',
                         id: 'showPROFILE',
-                        iconCls: 'showFormBtn'
+                        ui: 'action',
+                        iconCls: 'showFormBtn',
+                        text: 'Profile'
                     },
                     {
                         xtype: 'button',
-                        text: 'MyButton8'
+                        ui: 'round',
+                        text: 'Feeds'
                     }
                 ]
             }
