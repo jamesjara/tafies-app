@@ -59,23 +59,8 @@ Ext.define('JWF.view.Main', {
                     {
                         xtype: 'button',
                         cls: 'fbButton',
-                        id: 'showFormButton',
+                        id: 'showTOP',
                         iconCls: 'showFormBtn'
-                    },
-                    {
-                        xtype: 'button',
-                        cls: 'fbButton',
-                        id: 'signout',
-                        iconCls: 'signoutBtn'
-                    }
-                ]
-            },
-            {
-                xtype: 'panel',
-                items: [
-                    {
-                        xtype: 'label',
-                        html: 'asdasd'
                     }
                 ]
             }

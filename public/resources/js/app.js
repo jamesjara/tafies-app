@@ -36,7 +36,8 @@ Ext.application({
         'NoFriends',
         'Main',
         'Login',
-        'Form'
+        'Form',
+        'MyPanel1'
     ],
     icon: {
         '57': 'resources/icons/icon.png',

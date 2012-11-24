@@ -26,6 +26,9 @@ Ext.define('JWF.controller.Runs', {
             },
             "#addRunBackBtn": {
                 tap: 'hideForm'
+            },
+            "#showTOP": {
+                tap: 'showTOP'
             }
         }
     },
@@ -68,6 +71,13 @@ Ext.define('JWF.controller.Runs', {
     hideForm: function(button, e, options) {
         Ext.Viewport.setActiveItem(Ext.getCmp('main'));
         Ext.getCmp('runForm').hide();
+    },
+
+    showTOP: function() {
+        this.showTOP = Ext.create('JWF.view.MyPanel1', {
+            id: 'runTOP'
+        });
+        Ext.Viewport.setActiveItem(this.showTOP);
     },
 
     init: function(application) {
