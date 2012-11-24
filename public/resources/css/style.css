@@ -92,3 +92,6 @@
 		.x-list-container{
     		background-color:white;
     	}
+.x-list .x-list-item{
+    		background-color:lightgray;
+    	}
