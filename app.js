@@ -162,6 +162,12 @@ app.get('/node=ap1', function(req, res) {
     res.json('test');
 });
 
+
+app.get('/data', function(req, res) {
+    //res.json('test');
+	res.('{"data":[{"title":"El lugar m\u00e1s entretenido","link":"daata","author":"daata","publishedDate":"daata","contentSnippet":"daata","content":"daata","leaf":false,"id":"ap1"},{"title":"Los mejores precios","link":"daata","author":"daata","publishedDate":"daata","contentSnippet":"daata","content":"daata","leaf":false,"id":"ap2"},{"title":"Mejores promociones","link":"daata","author":"daata","publishedDate":"daata","contentSnippet":"daata","content":"daata","leaf":false,"id":"ap3"}]');
+});
+
 /**
  * Return a list of runs for the user and all the user's friends
  */
