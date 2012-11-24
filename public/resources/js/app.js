@@ -59,8 +59,7 @@ Ext.application({
                 fullscreen: true,
                 padding: 20,
                 html: [
-                '<p>Please read the readme to set up this example locally.</p><br/>',
-                '<p>For a live example, visit <a href="http://ju.mp/senchajwf">http://ju.mp/senchajwf</a></p>'
+                '<p>Config Error</p><br/>',
                 ].join('')
             });
         }
